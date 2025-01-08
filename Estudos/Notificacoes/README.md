@@ -15,7 +15,15 @@ Neste primeiro momento, estamos buscando ampliar a compreensão do problema, e p
 
 #### 1.1.Objetivos
 
+O objetivo deste primeiro teste são:
+
+* Averiguar quais são os métodos acionados pela SystemUi quando uma notificação é disparada
+* Filtrar quais arquivos serão importantes
+* Manusear as notificações
+
 #### 1.2.Processo
+
+<img src="Estudos/Notificacoes/imgs/PrimExpProcess.png">
 
 #### 1.3.Tutorial
 
