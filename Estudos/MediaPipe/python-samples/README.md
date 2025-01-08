@@ -1,22 +1,40 @@
-# MediaPipe - Leituras
+# MediaPipe - Python usage examples
 
-- [Página Oficial](https://ai.google.dev/edge/mediapipe/solutions/guide?hl=pt-br)
-- [Repositório Oficial no Github](https://github.com/google-ai-edge/mediapipe)
+Follow steps describes in sections below to install and execute the scripts.
+
+## Environment Setup
+
+To be able to run Python scripts, follow steps bellow.
+
+### Python Setup
+
+After clone this repository, follow steps bellow:
+
+1. Install python in version `3.10` em :  [pyhton.org](https://www.python.org/downloads/)
+
+2. Create and activate a `virtualenv`:
+
+```bash
+$ python -m venv venv_mediapipe 
+$ .\venv_mediapipe\Scripts\activate
+```
+
+3. Install remain python dependecies:
+```bash
+$ pip install -r requirements.txt
+```
+
+### C++ Dependencies (for Windows):
+
+1. Download and install the latest [Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) from the official Microsoft website:
+
+2. Download Visual C++ Redistributable Packages
+- Install both the x64 and x86 versions, as MediaPipe may depend on either or both.
 
 
-## Modelos pré-treinados 
+## Run Code
 
-- [Tucano: Advancing Neural Text Generation for Portuguese](https://nkluge-correa.github.io/Tucano/)
-
-
-## Tutoriais - Python
-
-- Text Similarity
-	- [Guia de incorporação de texto para Python](https://ai.google.dev/edge/mediapipe/solutions/text/text_embedder/python?hl=pt-br)
-	- [How to add text similarity to your applications easily using MediaPipe and Python](https://medium.com/google-developer-experts/how-to-add-text-similarity-to-your-applications-easily-using-mediapipe-and-python-6d309edeed21)
-	- [BERT |  MediaPipe | Cousine Similarity](https://dev.to/sajjadrahman56/a-beginners-guide-to-text-embedding-using-bert-with-mediapipe-1j1h)
-
-
-## Tools
-
-- [MediaPipe Text Embedder for Web](https://codepen.io/mediapipe-preview/pen/XWBVZmE)
+```
+cd python-samples
+python embedding_text.py
+```
