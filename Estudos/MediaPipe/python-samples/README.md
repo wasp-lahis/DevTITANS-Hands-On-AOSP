@@ -34,6 +34,10 @@ $ pip install -r requirements.txt
 
 ## Run Code
 
+1. Download Bert model
+
+2. Execute mediapipe script:
+
 ```
 cd python-samples
 python embedding_text.py
