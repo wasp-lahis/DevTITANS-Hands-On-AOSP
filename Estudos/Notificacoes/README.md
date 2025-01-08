@@ -7,18 +7,18 @@ Dado o desafio do Hands-On que é modificar a exibição das notificações, com
 
 Trata-se do nosso processo de descoberta dos fatores influenciam na exibição das notificações pela SystemUi, desde a estaca zero até o momento Eureka, que será quando descobrirmos de fato como alterar a exibição para satisfazer aos requisitos mínimos do Hands-On Final.
 
-### Estaca Zero 😵
+### 0.Estaca Zero 😵
 
 Neste primeiro momento, estamos buscando ampliar a compreensão do problema, e para tanto investigamos primariamente os arquivos da pasta ``` frameworks/base/core/java/android/app/Notification``` , afim de compreender os processos internos do aosp para o gerenciamento das notificações. Além disso também necessitávamos de entendimento para criar um mecanismo de gerar notificações, o que será muito útil posteriormente para os experimentos. Os estudos acerca os arquivos de Notification estão mais detalhados <to-do>(mudar os arquivos de notification pra uma página). 
 
-### Primeiro experimento ⚛️
+### 1.Primeiro experimento ⚛️
 
-#### Objetivos
+#### 1.1.Objetivos
 
-#### Processo
+#### 1.2.Processo
 
-#### Tutorial
+#### 1.3.Tutorial
 
-#### Resultados
+#### 1.4.Resultados
 
 ### Eureka - Descobrimos 🎆
