@@ -34,7 +34,7 @@ $ pip install -r requirements.txt
 
 ## Run Code
 
-1. Download Bert model
+1. Download [Bert model](https://storage.googleapis.com/mediapipe-models/text_embedder/bert_embedder/float32/1/bert_embedder.tflite)
 
 2. Execute mediapipe script:
 
