@@ -127,11 +127,14 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
+# Models
+*.tflite
+
 # Environments
 .env
 .venv
-.venv_mediapipe
-venv_mediapipe/
+.venv_mediapipe_
+venv_mediapipe_/
 env/
 venv/
 ENV/

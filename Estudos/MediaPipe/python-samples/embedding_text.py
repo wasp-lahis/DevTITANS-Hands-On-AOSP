@@ -28,7 +28,9 @@ with text.TextEmbedder.create_from_options(options) as embedder:
   # Retrieve the first and second sets of text that will be compared
   first_text = "I'm feeling so good" 
   second_text = "I'm okay I guess"
-  third_text = "Your number account is 897" 
+  #third_text = "Your number account is 897"
+  third_text = "I'm a bad persons, bad bad bad!"
+   
 
   print("\n[INFO] Input Text phrases:")
   print(f"\tfirst_text: {first_text}")

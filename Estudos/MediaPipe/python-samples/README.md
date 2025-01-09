@@ -10,13 +10,13 @@ To be able to run Python scripts, follow steps bellow.
 
 After clone this repository, follow steps bellow:
 
-1. Install python in version `3.10` em :  [pyhton.org](https://www.python.org/downloads/)
+1. Install python in version `3.10` or `3.11` em :  [pyhton.org](https://www.python.org/downloads/)
 
 2. Create and activate a `virtualenv`:
 
 ```bash
-$ python -m venv venv_mediapipe 
-$ .\venv_mediapipe\Scripts\activate
+$ python -m venv venv_mediapipe_ 
+$ .\venv_mediapipe_\Scripts\activate
 ```
 
 3. Install remain python dependecies:
