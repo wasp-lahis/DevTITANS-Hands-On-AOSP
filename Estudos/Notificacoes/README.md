@@ -50,7 +50,7 @@ Terceiro: Ligue o emulador e ative o logcat.
 
 ##### 1.4.1NotificationListener
 
-Após obtermos a saída do log, podemos verificar que é possível obter o log
+Após obtermos a saída do log, podemos verificar que é possível obter o texto da notificação
 
 ```
 01-10 14:44:27.924   712   712 D NotifContent: Title: Titulo
