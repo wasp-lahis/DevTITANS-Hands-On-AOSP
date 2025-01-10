@@ -48,7 +48,7 @@ Terceiro: Ligue o emulador e ative o logcat.
 
 #### 1.4.Resultados
 
-##### NotificationListener
+##### 1.4.1NotificationListener
 
 Após obtermos a saída do log, podemos verificar que é possível obter o log
 
