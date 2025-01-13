@@ -27,6 +27,36 @@ O objetivo deste primeiro teste são:
 
 #### 1.3.Tutorial
 
+##### 1.3.1. NotificationListener 
+
+Neste tutorial, iremos modificar o arquivo Notification Listener, presente na pasta ```frameworks/base/packages/SystemUi/src/com/android/systemui/statusbar```, o intuito principal deste primeiro teste é perceber como manipular o texto da notificação quando a notificação é "postada", e o método responsável por isso (onNotificationPosted) está presente nesta classe. Neste exemplo eu só quis verificar se era possível pegar o texto da notificação, e então adicionei um Log.d no método citado.
+
+Primeiro: Modifique o método onNotificationPosted, adicionando o seguinte bloco de código:
+
+```
+Log.d("Testando - DevTitans", "=== NOTIFICATION POSTED ===");
+if(sbn!= null){
+  Log.d("NotifContent", "Title: " + sbn.getNotification().extras.getString(Notification.EXTRA_TITLE));
+  Log.d("NotifContent", "Text: " + sbn.getNotification().extras.getString(Notification.EXTRA_TEXT));
+  Log.d("NotifContent", "Package: " + sbn.getPackageName());
+}
+```
+Segundo: Builde seu AOSP
+
+Terceiro: Ligue o emulador e ative o logcat.
+
+
 #### 1.4.Resultados
+
+##### 1.4.1NotificationListener
+
+Após obtermos a saída do log, podemos verificar que é possível obter o texto da notificação
+
+```
+01-10 14:44:27.924   712   712 D NotifContent: Title: Titulo
+01-10 14:44:27.924   712   712 D NotifContent: Text: Notificacao tops
+01-10 14:44:27.924   712   712 D NotifContent: Package: br.edu.ufam.testenotification
+01-10 14:44:27.927   433  1762 D NuPlayerDriver: NuPlayerDriver(0xeafc0dd0) created, clientPid(712)
+```
 
 ### Eureka - Descobrimos 🎆
