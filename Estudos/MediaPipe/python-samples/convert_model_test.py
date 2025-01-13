@@ -2,10 +2,10 @@
 # coding: utf-8
 
 r"""
-This script perform a similiraty inference between text phrases using Bert Model and MediaPipe module.
+This script performs gemma model conversion to Android using MediaPipe lib.
 
 Usage:
-    $ python .\embedding_text.py
+    $ python .\convert_model_test.py
 """
 
 import os

@@ -2,7 +2,7 @@
 # coding: utf-8
 
 r"""
-This script perform a similiraty inference between text phrases using Bert Model and MediaPipe module.
+This script performs a similiraty inference between text phrases using Bert Model and MediaPipe module.
 
 Usage:
     $ python .\embedding_text.py
