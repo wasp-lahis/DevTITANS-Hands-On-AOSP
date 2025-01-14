@@ -137,7 +137,7 @@ public void initialize(...){
 
 ##### 2.4.2 Texto da notificação modificado 
 
-<img src="https://github.com/wasp-lahis/DevTITANS-Hands-On-AOSP/tree/study/systemui/Estudos/Notificacoes/imgs/Aospetop.png">
+<img src="https://github.com/wasp-lahis/DevTITANS-Hands-On-AOSP/blob/study/systemui/Estudos/Notificacoes/imgs/Aospetop.png">
 
 
 ### Eureka - Descobrimos 🎆
