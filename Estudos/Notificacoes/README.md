@@ -9,7 +9,7 @@ Trata-se do nosso processo de descoberta dos fatores influenciam na exibição d
 
 ### 0.Estaca Zero 😵
 
-Neste primeiro momento, estamos buscando ampliar a compreensão do problema, e para tanto investigamos primariamente os arquivos da pasta ``` frameworks/base/core/java/android/app/Notification``` , afim de compreender os processos internos do aosp para o gerenciamento das notificações. Além disso também necessitávamos de entendimento para criar um mecanismo de gerar notificações, o que será muito útil posteriormente para os experimentos. Os estudos acerca os arquivos de Notification estão mais detalhados <to-do>(mudar os arquivos de notification pra uma página). 
+Neste primeiro momento, estamos buscando ampliar a compreensão do problema, e para tanto investigamos primariamente os arquivos da pasta ``` frameworks/base/core/java/android/app/Notification``` , afim de compreender os processos internos do aosp para o gerenciamento das notificações. Além disso também necessitávamos de entendimento para criar um mecanismo de gerar notificações, o que será muito útil posteriormente para os experimentos. Os estudos acerca os arquivos de Notification estão mais detalhados  `<TO DO>`(mudar os arquivos de notification pra uma página). 
 
 ### 1. Experimento: Analisando LogCat ⚛️
 
@@ -59,11 +59,46 @@ Após obtermos a saída do log, podemos verificar que é possível obter o texto
 
 #### 1.5. Conclusão
 
-Após um diálogo com o [Mateus Preste](https://github.com/mateusPreste), foi-nos explicado que a este experimento teve mais utilidade para uma percepção geral da lógica de chamada da notificação, portanto ele nos sugeriu usar a ferramenta AutomatorViewerUi, para rastrear os componentes de View e desse modo conseguir ver onde estavam os conteúdos exibidos pela SystemUI na notificação... Após isso mudamos nossa estratégia e seguimos a sugestão.
+Após um diálogo com o [Mateus Preste](https://github.com/mateusPreste), foi-nos explicado que a este experimento teve mais utilidade para uma percepção geral da lógica de chamada da notificação, portanto ele nos sugeriu usar a ferramenta AutomatorViewerUi, para rastrear os componentes de View e desse modo conseguir ver onde estavam os conteúdos exibidos pela SystemUI na notificação... Após isso mudamos nossa estratégia e seguimos a sugestão. 
+
+ `<TO DO>` Explicar que a classe NotificationListener...
+
 
 ### 2. Experimento: Analisando AutomatorViewerUi⚛️
 
+```💡 O AutomatorViewerUi é uma ferramenta do Android que permite visualizar a hierarquia de elementos da interface do usuário (UI) em aplicativos Android```
+
 #### 2.1 Objetivos
+
+Os objetivos deste segundo experimento são:
+
+* Inspecionar os componentes visuais da notificação
+* Analisar qual o package que o componente visual de notificação está
+* Modificar o conteúdo de uma notificação via SystemUi
+
+#### 2.2. Processo
+
+#### 2.3. Tutorial
+
+##### 2.3.1 Configurando a ferramenta
+
+Com o emulador acionado, navegue até a pasta ```Android/Sdk/tools/bin```, depois disso digite o comando ./uiautomatorviewer, e será inicializado o programa.
+
+##### 2.3.2 Verificando a hierarquia
+
+Após isso, abra a aba de notificações no emulador, e na ferramenta de automatorviewer aperte no segundo botão superior esquerdo, depois disso será fornecido um print da tela e é possível rastrear os componentes visuais da tela
+
+##### 2.3.4 Análise das classes 
+
+O processo de investigação foi desempenhado seguindo as sugestões do [Mateus Preste](https://github.com/mateusPreste), o qual nos direcionou a procurar por classes que fossem responsáveis por exibir o conteúdo do componente visual da notificação. Após verificar que a notificação exibida pela systemUi era 
+
+##### 2.3.5 Modificando o conteúdo do título 
+
+#### 2.4 Resultados
+
+##### 2.4.1 
+
+
 
 
 
