@@ -23,14 +23,14 @@ def gemma_download(token):
         hf_hub_download(repo_id=REPO_ID, filename=filename, local_dir="./gemma-2b-it")
 
 
-def gemma_convert_config(backend):
-    #   input_ckpt = '/content/gemma-2b-it/'
-    #   vocab_model_file = '/content/gemma-2b-it/'
-    #   output_dir = '/content/intermediate/gemma-2b-it/'
-    #   output_tflite_file = f'/content/converted_models/gemma_{backend}.tflite'
-    #   return converter.ConversionConfig(input_ckpt=input_ckpt, ckpt_format='safetensors', model_type='GEMMA_2B', backend=backend, output_dir=output_dir, combine_file_only=False, vocab_model_file=vocab_model_file, output_tflite_file=output_tflite_file)
+# def gemma_convert_config(backend):
+#     #   input_ckpt = '/content/gemma-2b-it/'
+#     #   vocab_model_file = '/content/gemma-2b-it/'
+#     #   output_dir = '/content/intermediate/gemma-2b-it/'
+#     #   output_tflite_file = f'/content/converted_models/gemma_{backend}.tflite'
+#     #   return converter.ConversionConfig(input_ckpt=input_ckpt, ckpt_format='safetensors', model_type='GEMMA_2B', backend=backend, output_dir=output_dir, combine_file_only=False, vocab_model_file=vocab_model_file, output_tflite_file=output_tflite_file)
 
-    import os
+#     import os
 
 def gemma_convert_config(backend):
     input_ckpt = '/gemma-2b-it/'
