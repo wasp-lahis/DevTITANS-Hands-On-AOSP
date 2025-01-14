@@ -11,7 +11,7 @@ Trata-se do nosso processo de descoberta dos fatores influenciam na exibição d
 
 Neste primeiro momento, estamos buscando ampliar a compreensão do problema, e para tanto investigamos primariamente os arquivos da pasta ``` frameworks/base/core/java/android/app/Notification``` , afim de compreender os processos internos do aosp para o gerenciamento das notificações. Além disso também necessitávamos de entendimento para criar um mecanismo de gerar notificações, o que será muito útil posteriormente para os experimentos. Os estudos acerca os arquivos de Notification estão mais detalhados <to-do>(mudar os arquivos de notification pra uma página). 
 
-### 1. Experimento: Analisando LogCat⚛️
+### 1. Experimento: Analisando LogCat ⚛️
 
 #### 1.1.Objetivos
 
@@ -48,8 +48,6 @@ Terceiro: Ligue o emulador e ative o logcat.
 
 #### 1.4.Resultados
 
-##### 1.4.1NotificationListener
-
 Após obtermos a saída do log, podemos verificar que é possível obter o texto da notificação
 
 ```
@@ -58,5 +56,16 @@ Após obtermos a saída do log, podemos verificar que é possível obter o texto
 01-10 14:44:27.924   712   712 D NotifContent: Package: br.edu.ufam.testenotification
 01-10 14:44:27.927   433  1762 D NuPlayerDriver: NuPlayerDriver(0xeafc0dd0) created, clientPid(712)
 ```
+
+#### 1.5. Conclusão
+
+Após um diálogo com o [Matues](https://github.com/mateusPreste)
+
+### 2. Experimento: Analisando AutomatorViewerUi⚛️
+
+#### 2.1 Objetivos
+
+
+
 
 ### Eureka - Descobrimos 🎆
