@@ -59,7 +59,7 @@ Após obtermos a saída do log, podemos verificar que é possível obter o texto
 
 #### 1.5. Conclusão
 
-Após um diálogo com o [Matues](https://github.com/mateusPreste)
+Após um diálogo com o [Mateus Preste](https://github.com/mateusPreste), foi-nos explicado que a este experimento teve mais utilidade para uma percepção geral da lógica de chamada da notificação, portanto ele nos sugeriu usar a ferramenta AutomatorViewerUi, para rastrear os componentes de View e desse modo conseguir ver onde estavam os conteúdos exibidos pela SystemUI na notificação... Após isso mudamos nossa estratégia e seguimos a sugestão.
 
 ### 2. Experimento: Analisando AutomatorViewerUi⚛️
 
