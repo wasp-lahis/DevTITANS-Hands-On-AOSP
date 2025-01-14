@@ -94,7 +94,7 @@ O processo de investigação foi desempenhado seguindo as sugestões do monitor,
 
 ``` 💡 A classe ExpandableNotificationRow.java está no seguinte path com.android.systemui:id/expandableNotificationRow```
 
-<img src = "https://github.com/wasp-lahis/DevTITANS-Hands-On-AOSP/blob/study/systemui/Estudos/Notificacoes/imgs/Captura%20de%20tela%20de%202025-01-14%2014-11-14.png" >
+<img src ="https://github.com/wasp-lahis/DevTITANS-Hands-On-AOSP/blob/study/systemui/Estudos/Notificacoes/imgs/Captura%20de%20tela%20de%202025-01-14%2014-11-14.png" >
 
 
 
