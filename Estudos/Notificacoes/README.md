@@ -11,7 +11,7 @@ Trata-se do nosso processo de descoberta dos fatores influenciam na exibição d
 
 Neste primeiro momento, estamos buscando ampliar a compreensão do problema, e para tanto investigamos primariamente os arquivos da pasta ``` frameworks/base/core/java/android/app/Notification``` , afim de compreender os processos internos do aosp para o gerenciamento das notificações. Além disso também necessitávamos de entendimento para criar um mecanismo de gerar notificações, o que será muito útil posteriormente para os experimentos. Os estudos acerca os arquivos de Notification estão mais detalhados <to-do>(mudar os arquivos de notification pra uma página). 
 
-### 1.Primeiro experimento ⚛️
+### 1. Experimento: Analisando LogCat⚛️
 
 #### 1.1.Objetivos
 
