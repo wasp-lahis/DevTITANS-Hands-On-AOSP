@@ -96,13 +96,35 @@ O processo de investigação foi desempenhado seguindo as sugestões do monitor,
 
 <img src ="https://github.com/wasp-lahis/DevTITANS-Hands-On-AOSP/blob/study/systemui/Estudos/Notificacoes/imgs/Captura%20de%20tela%20de%202025-01-14%2014-11-14.png" >
 
+Depois de analisar o código, chegamos ao teste incial que era modificar o título da mensagem.
 
+##### 2.3.5 Modificando o título da Notificação - SOU UM IMPOSTOR DEVTITANS ! 🕶️ 
 
-##### 2.3.5 Modificando o conteúdo do título 
+``` 📍 Modificação feita em ExpandableNotificationRow.java```
 
+Ao analisar o código podemos verificar que há um método chamado ``ìnitialize()`` o qual é o entry point em que a notificação é inicializada e que por padrão instancia a entry, a qual possui os dados principais da notificação, então abaixo da instancia do entry eu criei um novo título, desssa forma:
 
+```
+  public void initialize(...){
+    mEntry = entry; //Já é instanciado por padrão
+    mEntry.getSbn().getNotification().extras.putString(Notification.EXTRA_TITLE, "Sou um Impostor DevTITANS");
+    //resto do código abaixo
+  }
+```
+* getSbn() : Pega o StatusBarNotification
+* getNotification()
+* extras : Acessa o Bundle de extras da notificação
+
+O resultado desta modificação pode ser verificado nos resultados.
 
 #### 2.4 Resultados
+
+##### 2.4.1 Título da notificação modificado
+
+<img src="https://github.com/wasp-lahis/DevTITANS-Hands-On-AOSP/blob/study/systemui/Estudos/Notificacoes/imgs/SouUmImpostorDevTITANS.png">
+
+
+
 
 ##### 2.4.1 
 
