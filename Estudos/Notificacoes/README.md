@@ -115,7 +115,19 @@ Ao analisar o código podemos verificar que há um método chamado ``ìnitialize
 * getNotification()
 * extras : Acessa o Bundle de extras da notificação
 
-O resultado desta modificação pode ser verificado nos resultados.
+##### 2.3.6 Modificando o texto da Notificação
+
+``` 📍 Modificação feita em ExpandableNotificationRow.java```
+
+A lógica é a mesma, só que agora acessando o EXTRA_TEXT, eu adicionei um texto simples. 
+
+```
+public void initialize(...){
+    mEntry = entry; //Já é instanciado por padrão
+    mEntry.getSbn().getNotification().extras.putString(Notification.EXTRA_TEXT, "DevTITANS - Aosp é top");
+    //resto do código abaixo
+  }
+```
 
 #### 2.4 Resultados
 
@@ -123,14 +135,9 @@ O resultado desta modificação pode ser verificado nos resultados.
 
 <img src="https://github.com/wasp-lahis/DevTITANS-Hands-On-AOSP/blob/study/systemui/Estudos/Notificacoes/imgs/SouUmImpostorDevTITANS.png">
 
+##### 2.4.2 Texto da notificação modificado 
 
-
-
-##### 2.4.1 
-
-
-
-
+<img src="https://github.com/wasp-lahis/DevTITANS-Hands-On-AOSP/tree/study/systemui/Estudos/Notificacoes/imgs">
 
 
 ### Eureka - Descobrimos 🎆
