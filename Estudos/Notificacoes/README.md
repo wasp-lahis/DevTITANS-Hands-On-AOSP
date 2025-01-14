@@ -90,9 +90,17 @@ Após isso, abra a aba de notificações no emulador, e na ferramenta de automat
 
 ##### 2.3.4 Análise das classes 
 
-O processo de investigação foi desempenhado seguindo as sugestões do [Mateus Preste](https://github.com/mateusPreste), o qual nos direcionou a procurar por classes que fossem responsáveis por exibir o conteúdo do componente visual da notificação. Após verificar que a notificação exibida pela systemUi era 
+O processo de investigação foi desempenhado seguindo as sugestões do monitor, o qual nos direcionou a procurar por classes que fossem responsáveis por exibir o conteúdo do componente visual da notificação. Após verificar que a notificação exibida pela systemUi pertencia à classe ```com.android.systemui:id/expandableNotificationRow``` como é comprovado na figura abaixo, após isso foi necessário analisar o código e verificar em que momento o conteúdo da notificação era exibido e que arquivo era responsável por isso.
+
+``` 💡 A classe ExpandableNotificationRow.java está no seguinte path com.android.systemui:id/expandableNotificationRow```
+
+<img src = "https://github.com/wasp-lahis/DevTITANS-Hands-On-AOSP/blob/study/systemui/Estudos/Notificacoes/imgs/Captura%20de%20tela%20de%202025-01-14%2014-11-14.png" >
+
+
 
 ##### 2.3.5 Modificando o conteúdo do título 
+
+
 
 #### 2.4 Resultados
 
