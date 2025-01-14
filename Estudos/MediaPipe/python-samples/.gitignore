@@ -130,7 +130,9 @@ celerybeat.pid
 # Models
 *.tflite
 gemma-2b-it/
-gemma-2b-it-converted/
+gemma-2b-it-converted/*
+!gemma-2b-it-converted/README.md
+
 
 # Environments
 .env
