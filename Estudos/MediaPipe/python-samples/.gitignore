@@ -130,12 +130,15 @@ celerybeat.pid
 # Models
 *.tflite
 gemma-2b-it/
+gemma-2b-it-converted/
 
 # Environments
 .env
 .venv
 .venv_mediapipe_
+.venv_mediapipe
 venv_mediapipe_/
+venv_mediapipe/
 env/
 venv/
 ENV/
