@@ -26,9 +26,9 @@ O objetivo de nosso projeto é demonstrar como embarcar um modelo LLM, responsá
 - **Guilherme Duarte:** System UI e MediaPipe
 - **Felipe Vilhena:** Porte do produto
 - **Lahis Almeida:** MediaPipe
-- **Leonardo Ramos:** `<TO DO>`
+- **Leonardo Ramos:** System UI
 - **Nelson Villarreal:** System UI
-- **Thiago Oliveira:** Porte do produto
+- **Thiago Oliveira:** Porte do produto e MediaPipe
 
 > Obs: Todos os membros da equipe são responsáveis pela documentação da Wiki.
 
