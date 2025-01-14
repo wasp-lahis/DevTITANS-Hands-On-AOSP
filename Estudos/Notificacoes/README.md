@@ -23,7 +23,7 @@ O objetivo deste primeiro teste são:
 
 #### 1.2.Processo
 
-<img src="https://github.com/wasp-lahis/DevTITANS-Hands-On-AOSP/blob/study/mediapipe-python/Estudos/Notificacoes/imgs/PrimExpProcess.png" >
+<img src="https://github.com/wasp-lahis/DevTITANS-Hands-On-AOSP/blob/study/systemui/Estudos/Notificacoes/imgs/PrimExpProcess.png" >
 
 #### 1.3.Tutorial
 
