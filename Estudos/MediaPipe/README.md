@@ -48,6 +48,8 @@ Os objetivos destes primeiros experimentos são:
 
 #### 1.2.Processo
 
+todo
+
 #### 1.3.Experimentos e Resultados
 
 O tutorial está disponível em: 
@@ -56,13 +58,32 @@ O tutorial está disponível em:
 
 - No momento que estamos escrevendo este relato (14/01/2025), não há releases para as versões do `mediapipe` mais recentes do Python (13.01). Logo, tivemos que utilizar versões anteriores como a `3.10` e `3.11`;
 
-- O SO Windows não é uma boa opção para quem quer começar a trabalhar com o `mediapipe` pois além de ser preciso instalar pacotes adicionais e o software Visual Studio, existem alguns scripts que não possuem suporte para esse SO ainda (scripts de conversão de modelo por exemplo).
-
 - O `mediapipe` é utilizado com modelos LLM pricipalmente no processo de conversão de modelos. Teste que será feita no experimento 2.
 
 ### 2. Experimento: Conversão de Modelos para Android ⚛️
 
-todo: conversão de modelos p android
+#### 2.1.Objetivos
+
+Os objetivos destes primeiros experimentos são:
+
+* Estudar sobre a conversão de modelos utilizando o `mediapipe`
+* Estudar sobre diferentes tipos de modelos de LLM para geração de textos
+* Testar a conversão de modelos utilizando o `mediapipe`
+* Registrar eventuais dependências e dificudades de instalação
+
+#### 2.2.Processo
+
+todo
+
+#### 2.3.Experimentos e Resultados
+
+O tutorial está disponível em: 
+
+### 2.4 Descobertas e Dificuldades
+
+- O SO Windows não é uma boa opção para quem quer começar a trabalhar com o `mediapipe` pois além de ser preciso instalar pacotes adicionais e o software Visual Studio, existem alguns scripts que não possuem suporte para esse SO ainda (scripts de conversão de modelo por exemplo).
+
+- O `mediapipe` é utilizado com modelos LLM pricipalmente no processo de conversão de modelos. Teste que será feita no experimento 2.
 
 ### 3. Experimento: Inferência do Modelo no Android Studio ⚛️
 
