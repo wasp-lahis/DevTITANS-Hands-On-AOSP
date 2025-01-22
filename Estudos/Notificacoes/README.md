@@ -27,6 +27,11 @@ O objetivo deste primeiro teste são:
 
 #### 1.3.Tutorial
 
+`<TO DO>` Ilustrar o processo seguido
+`<TO DO>` Ilustrar o processo seguido
+`<TO DO>` Ilustrar o processo seguido
+
+
 ##### 1.3.1. NotificationListener 
 
 Neste tutorial, iremos modificar o arquivo Notification Listener, presente na pasta ```frameworks/base/packages/SystemUi/src/com/android/systemui/statusbar```, o intuito principal deste primeiro teste é perceber como manipular o texto da notificação quando a notificação é "postada", e o método responsável por isso (onNotificationPosted) está presente nesta classe. Neste exemplo eu só quis verificar se era possível pegar o texto da notificação, e então adicionei um Log.d no método citado.
@@ -78,7 +83,16 @@ Os objetivos deste segundo experimento são:
 
 #### 2.2. Processo
 
+`<TO DO>` Ilustrar o processo seguido
+`<TO DO>` Ilustrar o processo seguido
+`<TO DO>` Ilustrar o processo seguido
+
+
 #### 2.3. Tutorial
+
+`<TO DO>` Ilustrar o processo seguido
+`<TO DO>` Ilustrar o processo seguido
+`<TO DO>` Ilustrar o processo seguido
 
 ##### 2.3.1 Configurando a ferramenta
 
@@ -138,6 +152,41 @@ public void initialize(...){
 ##### 2.4.2 Texto da notificação modificado 
 
 <img src="https://github.com/wasp-lahis/DevTITANS-Hands-On-AOSP/blob/study/systemui/Estudos/Notificacoes/imgs/Aospetop.png">
+
+#### 2.5 Conclusão
+
+O experimento acima teve diversos desafios, principalmente ligados a interpretação de códigos e o funcionamento da SystemUi em si, o fato de tentar modificar os elementos da tela quando a notificação é inicializada funcioan, no entanto é muito restritiva pois ela destrói a notificação original e torna o nosso processo contraditório aos requisitos esperados, portanto concluímos que deveríamos seguir uma abordagem voltada a encontrar os estados da notificação e dessa vez alterá-los quando a notificação estivesse colapsado. Essa decisão trouxe novos ares para investigação, pois agora precisávamos perceber qual o trigger da notificação quando minimizado e tentar modificá-lo neste momento.
+
+
+### 3. Experimento: Procurando por alterações no estado da barra de notificação 📲
+
+`<TO DO>` Contextualizar experimento
+`<TO DO>` Contextualizar experimento
+`<TO DO>` Contextualizar experimento
+
+#### 3.1 Objetivos:
+
+* Inspecionar componentes visuais da tela
+* Inpecionar em que classe/método é realizado a mudança de estado da notificação quando colapsada
+* Modificar o conteúdo de uma notificação quando colapsado
+
+#### 3.2 Processo:
+
+`<TO DO>` Ilustrar o processo seguido
+`<TO DO>` Ilustrar o processo seguido
+`<TO DO>` Ilustrar o processo seguido
+
+#### 3.3 Tutorial:
+
+`<TO DO>` Ilustrar o processo seguido
+`<TO DO>` Ilustrar o processo seguido
+`<TO DO>` Ilustrar o processo seguido
+
+#### 3.4 Resultado
+
+##### 2.4.2 Texto da notificação modificado quando colapsado
+
+
 
 
 ### Eureka - Descobrimos 🎆
