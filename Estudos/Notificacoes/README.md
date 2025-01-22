@@ -184,10 +184,21 @@ O experimento acima teve diversos desafios, principalmente ligados a interpreta�
 
 #### 3.4 Resultado
 
-##### 2.4.1 Texto da notificação modificado quando colapsado [String na "tora"]
+##### 3.4.1 Texto da notificação modificado quando colapsado [String na "tora"]
 
 <img src="https://github.com/wasp-lahis/DevTITANS-Hands-On-AOSP/blob/study/systemui/Estudos/Notificacoes/imgs/NotificationBar-2025-01-16_13.36.34.gif">
 
+#### 3.4.2 Modificando texto da notificação com propriedade do sistema quando colapsado
+
+`<TO DO>` Fazer vídeo
+`<TO DO>` Fazer vídeo
+`<TO DO>` Fazer vídeo
+
+#### 3.4.3 Modificando texto da notificação usando Service do SmartLamp quando colapsado
+
+`<TO DO>` Fazer vídeo
+`<TO DO>` Fazer vídeo
+`<TO DO>` Fazer vídeo
 
 
 ### Eureka - Descobrimos 🎆
