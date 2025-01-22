@@ -184,7 +184,7 @@ O experimento acima teve diversos desafios, principalmente ligados a interpreta�
 
 #### 3.4 Resultado
 
-##### 2.4.1 Texto da notificação modificado quando colapsado
+##### 2.4.1 Texto da notificação modificado quando colapsado [String na "tora"]
 
 <img src="https://github.com/wasp-lahis/DevTITANS-Hands-On-AOSP/blob/study/systemui/Estudos/Notificacoes/imgs/NotificationBar-2025-01-16_13.36.34.gif">
 
