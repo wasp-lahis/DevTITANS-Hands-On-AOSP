@@ -1,0 +1,9 @@
+cc_binary {
+    name:         "smartlamp_client",
+    srcs:         [ "smartlamp_client.cpp" ],
+
+    shared_libs:  [ "smartlamp_lib" ],
+    required:     [ "smartlamp_lib" ],
+
+    vendor: true,
+}

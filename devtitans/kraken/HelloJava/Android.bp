@@ -1,0 +1,13 @@
+java_binary {
+    name:        "HelloJava",
+    wrapper:     "HelloJavaWrapper",
+    srcs:        [ "src/**/*.java" ],
+
+    libs:        [ "HelloJavaLib" ],          // Mude o "static_libs" para "libs"
+    required:    [ "HelloJavaLib" ],          // Depende da biblioteca
+
+    static_libs: [ "ChatLib", "GenIa" ],
+    
+    vendor:      true,
+    sdk_version: "current"
+}

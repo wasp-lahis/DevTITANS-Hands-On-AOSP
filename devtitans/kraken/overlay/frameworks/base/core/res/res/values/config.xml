@@ -1,0 +1,10 @@
+<resources>
+    <!-- Remove a rotação automática do dispositivo -->
+    <bool name="config_supportAutoRotation">false</bool>
+</resources>
+
+<!-- O que acontece ao se pressionar o botão power por um tempo longo -->
+<integer name="config_longPressOnPowerBehavior">2</integer>
+
+<!-- Raio dos cantos das caixas de diálogo -->
+<dimen name="config_dialogCornerRadius">50dp</dimen>

@@ -1,0 +1,18 @@
+android_app {
+    name:   "HelloApp",
+    vendor: true,
+
+    srcs:          [ "app/src/**/*.java" ],
+    resource_dirs: [ "app/src/main/res" ],
+    static_libs:   [
+        "com.google.android.material_material",
+        "androidx-constraintlayout_constraintlayout",
+        "androidx.test.ext.junit",
+        "androidx.test.espresso.core",
+    ],
+
+    manifest: "app/src/main/AndroidManifest.xml",
+    sdk_version: "system_current",
+    certificate: "platform",
+}
+

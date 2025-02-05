@@ -1,0 +1,6 @@
+service devtitans.smartlamp-service /vendor/bin/hw/devtitans.smartlamp-service
+        interface aidl devtitans.smartlamp.ISmartlamp/default
+        class hal
+        user root
+        group root
+        

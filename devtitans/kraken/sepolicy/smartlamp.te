@@ -1,0 +1,30 @@
+# Cria o tipo/rótulo do serviço AIDL (rotulado no arquivo service_contexts)
+type smartlamp_service, service_manager_type;
+
+# Cria o tipo/rótulo do daemon (rotulado no arquivo file_contexts)
+type smartlamp_daemon, domain;
+type smartlamp_daemon_exec, exec_type, vendor_file_type, file_type;
+
+# Permissões
+init_daemon_domain(smartlamp_daemon);                        # O daemon será iniciado pelo init
+vndbinder_use(smartlamp_daemon);                             # O daemon usará o binder
+allow smartlamp_daemon servicemanager:binder { call transfer };
+
+add_service(smartlamp_daemon, smartlamp_service)             # O daemon irá criar o serviço do smartlamp
+
+# Permite acesso aos arquivos do /sys
+allow smartlamp_daemon sysfs:file { getattr open read write };
+
+# Cria e Permite leitura da propriedades de sistema do smartlamp
+vendor_public_prop(vendor_smartlamp_prop)
+allow smartlamp_daemon vendor_smartlamp_prop:file { open getattr map read };
+
+# Permite que apps privilegiados acessem o daemon e o serviço
+allow platform_app smartlamp_daemon:binder call;
+allow platform_app smartlamp_service:service_manager find;
+
+# Permite que apps normais acessem o daemon e o serviço
+allow untrusted_app smartlamp_daemon:binder call;
+allow untrusted_app smartlamp_service:service_manager find;
+# Linha em branco para evitar erro de compilação
+        

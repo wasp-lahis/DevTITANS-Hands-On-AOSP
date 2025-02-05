@@ -1,0 +1,9 @@
+cc_binary {
+    name: "smartlamp_service_client",
+    srcs: ["smartlamp_service_client.cpp"],
+    vendor: true,
+    shared_libs: [
+        "libbinder_ndk",
+        "devtitans.smartlamp-V1-ndk",
+    ]
+}

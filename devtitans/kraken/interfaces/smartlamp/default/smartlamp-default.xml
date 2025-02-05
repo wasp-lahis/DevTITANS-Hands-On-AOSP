@@ -1,0 +1,7 @@
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>devtitans.smartlamp</name>
+        <version>1</version>
+        <fqname>ISmartlamp/default</fqname>
+    </hal>
+</manifest>

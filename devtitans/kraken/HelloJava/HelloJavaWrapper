@@ -1,0 +1,6 @@
+#!/system/bin/sh
+#
+# Script auxiliar para executar o HelloJava
+#
+export CLASSPATH=/vendor/framework/HelloJava.jar:/vendor/framework/HelloJavaLib.jar
+exec app_process /vendor/bin br.edu.ufam.icomp.devtitans.HelloJava "$@"

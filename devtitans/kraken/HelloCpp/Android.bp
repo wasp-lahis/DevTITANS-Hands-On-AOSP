@@ -1,0 +1,9 @@
+cc_binary {
+    name:        "hello_cpp",
+    srcs:        [ "hello_cpp.cpp" ],
+    shared_libs: [ "liblog","hello_cpp_lib" ],
+    //static_libs:  [ "hello_cpp_lib" ],
+    include_dirs: [ "device/devtitans/kraken/HelloCppLib" ],
+    required:     [ "hello_cpp_lib" ],
+    vendor:      true,
+}

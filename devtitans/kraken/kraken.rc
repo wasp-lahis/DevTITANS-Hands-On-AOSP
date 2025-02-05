@@ -1,0 +1,5 @@
+on early-init
+    export DEV_TITANS "DevTITANS Kraken! v1.0"
+
+on property:dev.bootcomplete=1
+    exec /system/bin/log -p d -t "DevTITANS" "DevTITANS Kraken! inicializado."

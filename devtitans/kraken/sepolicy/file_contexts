@@ -1,0 +1,7 @@
+# Define o rótulo do daemon HelloDaemonCpp
+/vendor/bin/hello_daemon_cpp           u:object_r:hellodaemoncpp_exec:s0
+
+# Define o rótulo do daemon smartlamp
+/vendor/bin/hw/devtitans.smartlamp-service  u:object_r:smartlamp_daemon_exec:s0
+# Linha em branco para evitar erro de compilação
+        

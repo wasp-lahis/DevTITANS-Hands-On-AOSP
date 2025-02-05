@@ -1,0 +1,5 @@
+service hello_daemon_cpp /vendor/bin/hello_daemon_cpp
+    class main
+    user system
+    group system
+    oneshot

@@ -1,0 +1,10 @@
+java_import {
+    name: "GenIa",
+    jars: [
+        "classes-core.jar",
+        "classes-gen.jar",
+        ],
+
+    vendor:      true,
+    sdk_version: "current",
+}

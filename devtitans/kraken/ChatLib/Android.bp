@@ -1,0 +1,15 @@
+java_library {
+    name:        "ChatLib",
+    srcs:        [ "src/**/*.kt" ],
+    static_libs:   [
+        "GenIa",
+        "androidx.compose.runtime_runtime",
+        "androidx.core_core-ktx",
+        "androidx.lifecycle_lifecycle-runtime-ktx",
+        "androidx.appcompat_appcompat",
+        "androidx.lifecycle_lifecycle-runtime-compose"
+        ],
+
+    vendor:      true,
+    sdk_version: "current"
+}
