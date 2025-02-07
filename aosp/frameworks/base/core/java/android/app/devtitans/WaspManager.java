@@ -10,6 +10,9 @@ import android.annotation.NonNull;
 
 public class WaspManager {
     private static final String TAG = "WaspManager";
+
+    public static final String SERVICE_NAME = Context.WASP_SERVICE;
+
     private final Context mContext;
     private final IWaspService mService;
     
@@ -53,5 +56,13 @@ public class WaspManager {
         } catch (RemoteException e) {
             Log.e(TAG, "Failed to clear modified texts", e);
         }
+    }
+
+    /** 
+     * Pegando a interface WaspService do system service manager
+     * @hide
+    */
+    public static IWaspService getService() {
+        return IWaspService.Stub.asInterface(ServiceManager.getService(SERVICE_NAME));
     }
 }

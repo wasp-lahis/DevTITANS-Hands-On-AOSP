@@ -7904,6 +7904,6 @@
      }
  
      @SuppressLint("ServiceName")
-     public static final String WASP_SERVICE = "wasp";
+     public static final String WASP_SERVICE = "wasp_service";
  }
  

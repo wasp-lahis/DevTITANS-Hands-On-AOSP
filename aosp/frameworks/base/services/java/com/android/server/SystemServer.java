@@ -229,6 +229,8 @@
  
  import android.app.devtitans.WaspManager;
  import com.android.server.notification.devtitans.WaspService;
+ import android.os.devtitans.IWaspService;
+ 
  
  import dalvik.system.VMRuntime;
  
@@ -1769,11 +1771,15 @@
          }
  
          t.traceBegin("StartWaspService");
-         try{
-             Slog.i(TAG, "***WaspService starts***");
-             ServiceManager.addService(Context.WASP_SERVICE, new WaspService());
-         } catch(Throwable e){
-             Slog.i(TAG, "***Failure starting WaspService");
+         try {
+             WaspService service = new WaspService();
+             ServiceManager.addService(Context.WASP_SERVICE, service);
+             if (ServiceManager.getService(Context.WASP_SERVICE) == null) {
+                 throw new RuntimeException("WaspService registration failed");
+             }
+             Slog.i(TAG, "WaspService started successfully");
+         } catch(Throwable e) {
+             Slog.e(TAG, "Failed starting WaspService", e);
          }
          t.traceEnd();
  
