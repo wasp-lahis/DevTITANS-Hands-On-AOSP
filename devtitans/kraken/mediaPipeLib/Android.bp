@@ -2,7 +2,12 @@ java_import {
     name: "GenIa",
     jars: [
         "classes-core.jar",
-        "classes-gen.jar",
+        "classes-genIA.jar",
+        "ui-android-1.6.1-sources.jar",
+        "transport-api.jar",
+        "transport-backend.jar",
+        "transport-runtime.jar",
+        "libauto_value_plugin.jar",
         ],
 
     vendor:      true,

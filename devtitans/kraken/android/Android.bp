@@ -1,0 +1,25 @@
+android_app {
+    name:   "android",
+    vendor: true,
+
+    srcs:          [ "app/src/**/*.kt" ],
+    resource_dirs: [ "app/src/main/res" ],
+    static_libs:   [
+        "GenIa",
+        "androidx.core_core-ktx",
+        "androidx.lifecycle_lifecycle-runtime-ktx",
+        "androidx.activity_activity-compose",
+        "androidx.navigation_navigation-compose",
+        "androidx.lifecycle_lifecycle-viewmodel-ktx",
+        "androidx.lifecycle_lifecycle-runtime-compose",
+        "androidx.compose.ui_ui",
+        "androidx.compose.ui_ui-graphics",
+        "androidx.compose.ui_ui-tooling-preview",
+        "androidx.compose.material3_material3",
+        
+    ],
+
+    manifest: "app/src/main/AndroidManifest.xml",
+    sdk_version: "system_current",
+    certificate: "platform",
+}

@@ -32,8 +32,7 @@ PRODUCT_PACKAGES += \
     hello_cpp \
     hello_daemon_cpp \
     HelloApp \
-    HelloJava \
-    smartlamp_client 
+    smartlamp_client \
 
 
 BOARD_SEPOLICY_DIRS += device/devtitans/kraken/sepolicy
