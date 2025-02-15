@@ -7,9 +7,17 @@ java_library {
         "androidx.core_core-ktx",
         "androidx.lifecycle_lifecycle-runtime-ktx",
         "androidx.appcompat_appcompat",
-        "androidx.lifecycle_lifecycle-runtime-compose"
+        "androidx.lifecycle_lifecycle-runtime-compose",
+        "kotlin-stdlib",
         ],
 
     vendor:      true,
-    sdk_version: "current"
+    sdk_version: "current",
+    installable: true,  // nothing
+    visibility: [
+        "//visibility:public",
+    ],
+    apex_available: [
+        "//apex_available:platform", // pra tudo
+    ]
 }

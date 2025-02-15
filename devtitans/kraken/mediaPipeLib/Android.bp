@@ -4,12 +4,42 @@ java_import {
         "classes-core.jar",
         "classes-genIA.jar",
         "ui-android-1.6.1-sources.jar",
-        "transport-api.jar",
-        "transport-backend.jar",
-        "transport-runtime.jar",
         "libauto_value_plugin.jar",
         ],
 
+    libs: [
+        "transport-api",
+        "transport-runtime",
+        "transport-backend",
+    ],
+
     vendor:      true,
     sdk_version: "current",
+
+    // publico pra todos
+    visibility: [
+        "//visibility:public",
+    ],
+
+    apex_available: [
+        "//apex_available:platform", // pra tudo
+    ]
+}
+
+java_import {
+    name: "transport-api",
+    vendor: true,
+    jars: ["transport-api.jar"],
+}
+
+java_import {
+    name: "transport-runtime",
+    vendor: true,
+    jars: ["transport-runtime.jar"],
+}
+
+java_import {
+    name: "transport-backend",
+    vendor: true,
+    jars: ["transport-backend.jar"],
 }

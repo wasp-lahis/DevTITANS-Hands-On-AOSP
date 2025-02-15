@@ -1,0 +1,17 @@
+cc_prebuilt_library_shared {
+    name: "libllm_inference_engine_jni",
+    vendor: true,
+    target: {
+        //android_x86_64: {
+        //    srcs: ["x86_64/libllm_inference_engine_jni.so"],
+        //},
+        
+        android_arm64: {
+             srcs: ["arm64-v8a/libllm_inference_engine_jni.so"],
+        },
+    },
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+}
