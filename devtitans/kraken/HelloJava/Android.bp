@@ -7,7 +7,11 @@ java_binary {
     required:    [ "HelloJavaLib" ],          // Depende da biblioteca
 
     static_libs: [ "ChatLib", "GenIa" ],
+    installable: true,  // nothing
+    jni_libs: [ "libllm_inference_engine_jni" ], //nothing
     
     vendor:      true,
-    sdk_version: "current"
+    sdk_version: "current",
+    visibility: ["//visibility:public"],
+    //platform_apis: true,
 }

@@ -9,6 +9,10 @@ import com.google.mediapipe.tasks.genai.llminference.LlmInference;
 class HelloJava  {
     public static final String TAG = "DevTITANS.HelloJava";
 
+    public HelloJava(){
+        // nothing 
+    }
+
     void printHello(Context context) {
         System.out.println("Hello World in Java!");
         Log.v(TAG, "Hello World in Java (LogCat)!");
@@ -38,6 +42,6 @@ class HelloJava  {
 
     public static void main(String args[]) {
         HelloJava hello = new HelloJava();
-        hello.printHello();
+        hello.printHello(null);
     }
 }
