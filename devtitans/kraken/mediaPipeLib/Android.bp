@@ -1,8 +1,8 @@
 java_import {
     name: "GenIa",
     jars: [
-        "classes-core.jar",
-        "classes-genIA.jar",
+        "classes-gen_0_10_21.jar",
+        "classes-core_0_10_21.jar",
         "ui-android-1.6.1-sources.jar",
         "libauto_value_plugin.jar",
         ],
